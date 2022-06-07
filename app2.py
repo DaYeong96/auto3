@@ -149,6 +149,9 @@ def MOTORSPEED_def():
     
     
 def auto_def():
+    st.dataframe(INSP)
+    st.dataframe(MELT_TEMP)
+    st.dataframe(MOTORSPEED)
     new_x_df = pd.concat([INSP,MELT_TEMP,MOTORSPEED] ,axis=1)
     
     scaler_call = joblib.load("rscaler.pkl")   #정규화
