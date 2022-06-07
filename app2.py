@@ -214,6 +214,6 @@ if selected_box == '3. 용해 교반속도 입력':
     st.sidebar.write("모바일에서는 상단의 X를 눌러 원래화면으로 가세요")
     
 if selected_box == '결과':
-    auto_def()
+    auto_def(INSP, MELT_TEMP, MOTORSPEED)
     st.sidebar.write("모바일에서는 상단의 X를 눌러 원래화면으로 가세요")
       
