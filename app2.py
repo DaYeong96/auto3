@@ -180,11 +180,15 @@ def auto_def():
     st.title(' ')
     st.subheader('(4) 용해탱크의 이상탐지 결과는 다음과 같습니다.')
 
-
-    if pred_y==1:
-        st.error("비정상으로 예측됩니다.")
+    
+    
+    if INSP.sum() == 0 or MELT_TEMP.sum() == 0 or MOTORSPEED.sum() == 0:
+        st.info("분석 중입니다.")
     else:
-        st.success("정상으로 예측됩니다.")
+        if pred_y==1:
+            st.error("비정상으로 예측됩니다.")
+        else:
+            st.success("정상으로 예측됩니다.")
 
 
 ##############################################################################
