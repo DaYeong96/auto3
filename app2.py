@@ -15,7 +15,7 @@ from tensorflow.python import tf2
 def welcome():
     st.title('이 앱은 용해탱크의 이상상황을 예측하는 앱입니다.')
     
-   # st.subheader('모바일에서는 상단의 ">"를 클릭해 이미지입력 방식을 ') 
+    st.subheader('모바일에서는 상단의 ">"를 클릭해 데이터 입력 방식을 변경해주세요.') 
     
     st.image('용해탱크.png',use_column_width=True)   
 
