@@ -148,11 +148,11 @@ def MOTORSPEED_def():
 #########################################################################    
     
     
-def auto_def():
+def auto_def(INSP, MELT_TEMP, MOTORSPEED):
     
-    INSP=INSP_def()
-    MELT_TEMP=MELT_TEMP_def()
-    MOTORSPEED=MOTORSPEED_def()
+#     INSP=INSP_def()
+#     MELT_TEMP=MELT_TEMP_def()
+#     MOTORSPEED=MOTORSPEED_def()
     
     new_x_df = pd.concat([INSP,MELT_TEMP,MOTORSPEED] ,axis=1)
     
