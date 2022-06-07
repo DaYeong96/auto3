@@ -182,7 +182,7 @@ def auto_def():
 
     
     
-    if INSP.sum() == 0 or MELT_TEMP.sum() == 0 or MOTORSPEED.sum() == 0:
+    if INSP.sum().values == 0 or MELT_TEMP.sum().values == 0 or MOTORSPEED.sum().values == 0:
         st.info("분석 중입니다.")
     else:
         if pred_y==1:
