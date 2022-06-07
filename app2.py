@@ -149,6 +149,11 @@ def MOTORSPEED_def():
     
     
 def auto_def():
+    
+    INSP=INSP_def()
+    MELT_TEMP=MELT_TEMP_def()
+    MOTORSPEED=MOTORSPEED_def()
+    
     st.dataframe(INSP)
     st.dataframe(MELT_TEMP)
     st.dataframe(MOTORSPEED)
